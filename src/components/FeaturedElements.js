@@ -8,18 +8,25 @@ export const ContainerFeatured = styled.section`
     margin: auto;
     gap: 40px;
     padding: 40px;
-    font-family: "Monserrat";
-
+    
     & h3{
         font-size: 24px;
+        font-family: "Monserrat";
     }
 `;
 
 export const CardWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    //flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     align-items: center;
-    gap: 18px;
+    margin: auto;
+    gap: 20px;
+
+    @media (max-width: 1000px){
+        flex-wrap: wrap;
+    }
 `;
 
 export const ContainerCardProduct = styled.div`
@@ -27,6 +34,7 @@ export const ContainerCardProduct = styled.div`
     padding: 18px;
     flex-direction: column;
     align-items: center;
+    max-width: 300px;
     gap: 18px;
     border-radius: 19px;
     border: 1.8px solid #593A2E;

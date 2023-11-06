@@ -1,7 +1,7 @@
 import React from 'react';
-import { ContainerProducts, ProductWrapper, ShowMoreBtn } from './ProductsElements';
+import { ContainerProducts, ProductWrapper, ShowMoreBtn, CardProduct } from './ProductsElements';
 
-import { ContainerCardProduct, ProductTitle, AddButton } from "./FeaturedElements";
+import { ProductTitle, AddButton } from "./FeaturedElements";
 
 import DogJacket from '../img&icons/small-dog-with-warm-jacket-6224.jpg'
 import SkinBed from '../img&icons/skin-bed.jpg'
@@ -13,76 +13,76 @@ export const Products = () =>{
             <ContainerProducts id="product-section" >
                 <h3>Todos los productos</h3>
                 <ProductWrapper>
-                    <ContainerCardProduct>
+                    <CardProduct>
                         <img src= { DogJacket } alt="" />
                         <ProductTitle>
                             <h4>Abrigo Tom</h4>
                             <span>$8.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
+                    </CardProduct>
                         
-                    <ContainerCardProduct>
+                    <CardProduct>
                         <img src= { SkinBed } alt="" />
                         <ProductTitle>
                             <h4>Cama Piel</h4>
                             <span>$25.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
+                    </CardProduct>
 
-                    <ContainerCardProduct>
+                    <CardProduct>
                         <img src= { FishBowl } alt="" />
                         <ProductTitle>
                             <h4>Pecera Bob</h4>
                             <span>$9.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
+                    </CardProduct>
 
-                    <ContainerCardProduct>
+                    <CardProduct>
                         <img src= { Gretel } alt="" />
                         <ProductTitle>
                             <h4>Camino Gretel</h4>
                             <span>$57.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
-                    <ContainerCardProduct>
+                    </CardProduct>
+                    <CardProduct>
                         <img src= { DogJacket } alt="" />
                         <ProductTitle>
                             <h4>Abrigo Tom</h4>
                             <span>$8.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
+                    </CardProduct>
                         
-                    <ContainerCardProduct>
+                    <CardProduct>
                         <img src= { SkinBed } alt="" />
                         <ProductTitle>
                             <h4>Cama Piel</h4>
                             <span>$25.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
+                    </CardProduct>
 
-                    <ContainerCardProduct>
+                    <CardProduct>
                         <img src= { FishBowl } alt="" />
                         <ProductTitle>
                             <h4>Pecera Bob</h4>
                             <span>$9.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
+                    </CardProduct>
 
-                    <ContainerCardProduct>
+                    <CardProduct>
                         <img src= { Gretel } alt="" />
                         <ProductTitle>
                             <h4>Camino Gretel</h4>
                             <span>$57.000</span>
                         </ProductTitle>
                         <AddButton>Comprar</AddButton>
-                    </ContainerCardProduct>
+                    </CardProduct>
                 </ProductWrapper>
                 <ShowMoreBtn>Cargar más</ShowMoreBtn>
             </ContainerProducts>

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { ContainerCardProduct } from './FeaturedElements';
+
 export const ContainerProducts = styled.section`
     display: flex;
     flex-direction: column;
@@ -21,6 +23,21 @@ export const ProductWrapper = styled.div`
     flex-wrap: wrap;
 `;
 
+export const CardProduct = styled(ContainerCardProduct)`
+    width: 30%;
+
+    @media (max-width: 800px){
+        width: 40%;
+    }
+
+    @media (max-width: 680px){
+        width: 60%;
+    }
+
+    @media (max-width: 480px){
+        width: 90%;
+    }
+`;
 
 export const ShowMoreBtn = styled.button`
     display: flex;
@@ -34,4 +51,8 @@ export const ShowMoreBtn = styled.button`
     border: 2px solid #344029;
     cursor: pointer;
     font-size: 14px;
+
+    @media (max-width: 400px){
+        width: 90%;
+    }
 `;
