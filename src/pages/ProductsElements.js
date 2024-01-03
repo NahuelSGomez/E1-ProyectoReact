@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerCardProduct } from './FeaturedElements';
+import { ContainerCardProduct } from '../components/FeaturedElements';
 
 export const ContainerProducts = styled.section`
     display: flex;

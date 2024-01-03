@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { ContainerHero, HeroTop, LogoHero, SearchTop, HeroBottom, HeroInfo, HeroCartShop } from "./HeroElements";
 
 import { FaShoppingCart } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa'
 
 import Logo from '../img&icons/perro_logo.svg';
 import ImgHero from '../img&icons/Rectangle 9.svg'
 
-import { FaSearch } from 'react-icons/fa'
 
 export const Hero = () => {
     return (
@@ -29,8 +30,10 @@ export const Hero = () => {
                     En Pet Paradise encontrarás todo lo que necesitas para que tu mascota tenga una vida plena y llena de amor.</p>
                     </div>
                     <HeroCartShop>
-                        <FaShoppingCart />
-                        Ir al Shop
+                        <Link to="products">
+                            <FaShoppingCart />
+                            Ir al Shop
+                        </Link>
                     </HeroCartShop>
                 </HeroInfo>
                 <img src={ImgHero} alt="perros" />

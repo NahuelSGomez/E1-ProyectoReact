@@ -12,42 +12,39 @@ export const Categories = () =>{
             <h3>Categorias</h3>
             
             <CategoriesWrapper>
-            
-            <CategoryCardContainer>
-                <CategoryImg>
-                    <img src= { PicDog } alt="" />
-                    <h3>PERROS</h3>
-                </CategoryImg>
-                <CategoryButton>Ver</CategoryButton>
-            </CategoryCardContainer>
-            
-            <CategoryCardContainer>
-                <CategoryImg>
-                    <img src= { PicCat } alt="" />
-                    <h3>GATOS</h3>
-                </CategoryImg>
-                <CategoryButton>Ver</CategoryButton>
-            </CategoryCardContainer>
-            
-            <CategoryCardContainer>
-                <CategoryImg>
-                    <img src= { PicBird } alt="" />
-                    <h3>AVES</h3>
-                </CategoryImg>
-                <CategoryButton>Ver</CategoryButton>
-            </CategoryCardContainer>
-            
-            <CategoryCardContainer>
-                <CategoryImg>
-                    <img src= { PicMore } alt="" />
-                    <h3>Y MÁS...</h3>
-                </CategoryImg>
-                <CategoryButton>Ver</CategoryButton>
-            </CategoryCardContainer>
-
+                <CategoryCardContainer>
+                    <CategoryImg>
+                        <img src= { PicDog } alt="" />
+                        <h3>PERROS</h3>
+                    </CategoryImg>
+                    <CategoryButton>Ver</CategoryButton>
+                </CategoryCardContainer>
+                
+                <CategoryCardContainer>
+                    <CategoryImg>
+                        <img src= { PicCat } alt="" />
+                        <h3>GATOS</h3>
+                    </CategoryImg>
+                    <CategoryButton>Ver</CategoryButton>
+                </CategoryCardContainer>
+                
+                <CategoryCardContainer>
+                    <CategoryImg>
+                        <img src= { PicBird } alt="" />
+                        <h3>AVES</h3>
+                    </CategoryImg>
+                    <CategoryButton>Ver</CategoryButton>
+                </CategoryCardContainer>
+                
+                <CategoryCardContainer>
+                    <CategoryImg>
+                        <img src= { PicMore } alt="" />
+                        <h3>Y MÁS...</h3>
+                    </CategoryImg>
+                    <CategoryButton>Ver</CategoryButton>
+                </CategoryCardContainer>
             </CategoriesWrapper>
             
-
         </CategoryContainer>
     )
 }

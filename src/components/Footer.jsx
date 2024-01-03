@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { ContainerFooter, LogoContainerFooter, MenuFooter } from './FooterElements';
+import { MenuItem, MenuItemLink } from "./NavBarElements";
 
 import { FaFacebook } from 'react-icons/fa6';
 import { FaWhatsapp } from 'react-icons/fa6';
@@ -16,10 +18,30 @@ export const Footer = () => {
             </LogoContainerFooter>
 
             <MenuFooter>
-                <FaFacebook />
-                <AiOutlineInstagram />
-                <FaWhatsapp />
-                <MdEmail />
+                <MenuItem>
+                    <MenuItemLink>
+                        <FaFacebook />
+                    </MenuItemLink>
+                </MenuItem>
+
+                <MenuItem>
+                    <MenuItemLink>
+                        <AiOutlineInstagram />
+                    </MenuItemLink>
+                </MenuItem>
+
+                <MenuItem>
+                    <MenuItemLink>
+                        <FaWhatsapp />
+                    </MenuItemLink>
+                </MenuItem>
+                
+                <MenuItem>
+                    <MenuItemLink>
+                        <MdEmail />
+                    </MenuItemLink>
+                </MenuItem>
+                
             </MenuFooter>
 
         </ContainerFooter>

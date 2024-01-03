@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { ContainerProducts, ProductWrapper, ShowMoreBtn, CardProduct } from './ProductsElements';
 
-import { ProductTitle, AddButton } from "./FeaturedElements";
+import { ProductTitle, AddButton } from "../components/FeaturedElements";
 
 import DogJacket from '../img&icons/small-dog-with-warm-jacket-6224.jpg'
 import SkinBed from '../img&icons/skin-bed.jpg'
@@ -86,6 +87,5 @@ export const Products = () =>{
                 </ProductWrapper>
                 <ShowMoreBtn>Cargar más</ShowMoreBtn>
             </ContainerProducts>
-    )
-    
+    )   
 }

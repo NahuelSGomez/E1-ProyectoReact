@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Container = styled.header`
     width: 100%;
@@ -62,7 +63,7 @@ export const MenuItem = styled.li`
     }
 `;
 
-export const MenuItemLink = styled.a`
+export const MenuItemLink = styled(NavLink)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +93,12 @@ export const CartShop = styled.button`
     letter-spacing: 0.1px;
     cursor: pointer;
     font-size: 14px;
+
+    @media (max-width: 600px){
+        span{
+            display: none;
+        }
+    }
 `;
 
 export const BarsMenu = styled.div`

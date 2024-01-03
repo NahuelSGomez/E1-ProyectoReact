@@ -15,6 +15,7 @@ export const ContainerFooter = styled.footer`
 
 export const MenuFooter = styled(Menu)`
     gap: 10px;
+    font-size: 24px;
 `;
 
 export const LogoContainerFooter = styled(LogoContainer)`

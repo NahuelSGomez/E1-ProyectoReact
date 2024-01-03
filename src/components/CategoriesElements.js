@@ -23,7 +23,6 @@ export const CategoryImg = styled.div`
     }
 `;
 
-
 export const CategoryContainer = styled.section`
     display: flex;
     flex-direction: column;
@@ -34,7 +33,6 @@ export const CategoryContainer = styled.section`
     & h3{
         font-size: 24px;
         font-family: Monserrat;
-
     }
 `;
 

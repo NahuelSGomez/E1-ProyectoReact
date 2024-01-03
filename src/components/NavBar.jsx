@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Wrapper, LogoContainer, Menu, MenuItem, MenuItemLink, CartShop, BarsMenu } from './NavBarElements'
+import { Container, Wrapper, LogoContainer, Menu, MenuItem, CartShop, BarsMenu, MenuItemLink } from './NavBarElements'
 
 import { FaShoppingCart } from 'react-icons/fa';
 import { FaBars } from "react-icons/fa6";
@@ -15,21 +15,19 @@ export const NavBar = () => {
 
                 <Menu>
                     <MenuItem>
-                        <MenuItemLink href="#categories-section">
-                            Categorias
-                        </MenuItemLink>
-                    </MenuItem>
-                    
-                    <MenuItem>
-                        <MenuItemLink href="#featured-section" >
-                            Productos destacados
-                        </MenuItemLink>
+                        <MenuItemLink to="/">Inicio</MenuItemLink>
                     </MenuItem>
 
                     <MenuItem>
-                        <MenuItemLink>
-                            Contacto
-                        </MenuItemLink>
+                        <MenuItemLink to="/products">Productos</MenuItemLink>
+                    </MenuItem>
+
+                    <MenuItem>
+                        <MenuItemLink to="/about">Nosotros</MenuItemLink>
+                    </MenuItem>
+
+                    <MenuItem>
+                        <MenuItemLink to="/contact">Contacto</MenuItemLink>
                     </MenuItem>
 
                     <BarsMenu>
@@ -38,11 +36,10 @@ export const NavBar = () => {
 
                     <CartShop>
                         <FaShoppingCart />
+                        <span>Carrito</span>
                     </CartShop>
                 </Menu>
             </Wrapper>
         </Container>
     )
 }
-
-export default NavBar

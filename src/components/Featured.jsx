@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ContainerFeatured, ContainerCardProduct, CardWrapper, ProductTitle, AddButton } from './FeaturedElements';
+import { ShowMoreBtn } from '../pages/ProductsElements';
 
 import DogJacket from '../img&icons/small-dog-with-warm-jacket-6224.jpg'
 import SkinBed from '../img&icons/skin-bed.jpg'
@@ -47,6 +49,12 @@ export const Featured = () =>{
                     <AddButton>Comprar</AddButton>
                 </ContainerCardProduct>
             </CardWrapper>
+
+            <ShowMoreBtn>
+                <Link to="products">
+                    Ver todos los productos
+                </Link>
+            </ShowMoreBtn>
             
         </ContainerFeatured>
     )
